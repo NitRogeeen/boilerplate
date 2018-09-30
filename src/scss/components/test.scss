@@ -1,0 +1,9 @@
+.bigfont {
+    font-size: 30px;
+    color: linear-gradient(45deg, blue, red);
+    display: flex;
+}
+
+:global(.globalClass) {
+    background-color: navy; 
+}

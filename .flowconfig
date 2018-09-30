@@ -1,0 +1,15 @@
+[ignore]
+.*/node_modules/.*
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+module.name_mapper='^Js' ->'<PROJECT_ROOT>/src/js'
+module.name_mapper='^Scss' ->'<PROJECT_ROOT>/src/scss'
+module.file_ext=.scss
+module.name_mapper.extension='scss' -> 'empty/object'
+[strict]

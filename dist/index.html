@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://localhost:8888/webpack-dev-server.js"></script>
+    <script src="http://localhost:8888/js/renderer.bundle.js"></script>
+    <link href="http://localhost:8888/css/bundle.css" rel="stylesheet">
+    <!-- <script src="js/renderer.bundle.js"></script> -->
+    <title>MyApp</title>
+<body>
+    <div id="view"></div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const Renderer = window.myApp.Renderer;
+        if (Renderer != null) new Renderer('view');
+    });
+    </script>
+</html>
